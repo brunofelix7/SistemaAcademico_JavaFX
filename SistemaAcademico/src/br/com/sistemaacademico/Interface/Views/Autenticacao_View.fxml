@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="768.0" minWidth="1366.0" stylesheets="@../Controllers/Estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.sistemaacademico.Interface.Controllers.Autenticacao_Controller">
+    <children>
+      <AnchorPane fx:id="menuTopLogin" layoutX="-1.0" minHeight="120.0" minWidth="1366.0" stylesheets="@../Controllers/Estilo.css">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Sistema Acadêmico - JM@cade" textFill="#8595b8">
+               <effect>
+                  <Reflection />
+               </effect>
+               <font>
+                  <Font name="Gill Sans MT Italic" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="534.0" layoutY="263.0" prefHeight="242.0" prefWidth="299.0" stylesheets="@../Controllers/Estilo.css">
+         <children>
+            <Label fx:id="idWelcome" layoutX="127.0" layoutY="14.0" stylesheets="@../Controllers/Estilo.css" text="Bem-Vindo!">
+               <font>
+                  <Font name="Gill Sans MT" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="idUsername" layoutX="39.0" layoutY="71.0" stylesheets="@../Controllers/Estilo.css" text="Username:">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="idLogin" layoutX="110.0" layoutY="68.0" promptText="usuario" stylesheets="@../Controllers/Estilo.css" />
+            <Label fx:id="idPassword" layoutX="43.0" layoutY="112.0" stylesheets="@../Controllers/Estilo.css" text="Password:">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="idSenha" layoutX="111.0" layoutY="109.0" promptText="senha" stylesheets="@../Controllers/Estilo.css" />
+            <Button fx:id="onClick" alignment="CENTER" layoutX="152.0" layoutY="157.0" mnemonicParsing="false" onAction="#autenticar" prefHeight="28.0" prefWidth="66.0" stylesheets="@../Controllers/Estilo.css" text="Entrar" />
+            <Hyperlink fx:id="idRecuperarSenha" layoutX="129.0" layoutY="194.0" onAction="#recuperarSenha" stylesheets="@../Controllers/Estilo.css" text="Recuperar senha" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Hyperlink>
+            <Label fx:id="idLabelError" layoutX="111.0" layoutY="51.0" stylesheets="@../Controllers/Estilo.css" textFill="RED" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

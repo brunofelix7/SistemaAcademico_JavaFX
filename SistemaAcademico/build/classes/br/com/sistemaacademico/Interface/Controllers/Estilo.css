@@ -1,0 +1,325 @@
+/*Bckground da Tela Autenticacao*/
+#root{
+    -fx-background-image: url("login.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: cover;
+    -fx-background-position: bottom, center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+}
+
+/*Background da Tela Pagina Inicial*/
+#telaInicial{
+    -fx-background-image: url("system.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: cover;
+    -fx-background-position: bottom, center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+}
+
+/*Menu do Topo da Tela Pagina Inicial*/
+#menuTop{
+    -fx-background-color:lightgrey;
+}
+
+/*Menu do Topo da Tela Autenticacao*/
+#menuTopLogin{
+    -fx-background-color:lightgrey;
+}
+
+/*Label's da Tela Autenticacao*/
+#idWelcome, #idUsername, #idPassword{
+    -fx-text-fill:white;
+}
+
+/*Background da Telas de Cadastro*/
+#idAnchorPane{
+    -fx-background-color:lightgrey;
+}
+
+/*Background da Telas de Gerenciamento*/
+#idAnchorPaneGerenciar{
+    -fx-background-color:lightgrey;
+}
+
+/*Botão Cadastrar da tela de Cadastrar Novo*/
+#idCadastrar{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: #64DD17;
+    -fx-text-fill:white;
+}
+
+#idCadastrar:hover{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: linear-gradient(#76FF03, #76FF03);
+}
+
+
+#idCadastrar:pressed{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-margin: 0 0 0 0;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+/*Botão cancelar da tela de Cadastrar Novo*/
+#idCancelar{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: #F44336;
+    -fx-text-fill:white;
+}
+
+#idCancelar:hover{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: linear-gradient(#FF0000, #FF0000);
+}
+
+#idCancelar:pressed{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-margin: 0 0 0 0;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+
+/*Botão de teclado da Tela de Cadastrar Novo*/
+#idTeclado{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: #607D8B;
+    -fx-text-fill:white;
+}
+
+#idTeclado:hover{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: linear-gradient(#455A64, #455A64);
+}
+
+#idTeclado:pressed{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-margin: 0 0 0 0;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+/*Botão fechar da Tela de Gerenciamento*/
+#idFechar{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: #F44336;
+    -fx-text-fill:white;
+}
+
+#idFechar:hover{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: linear-gradient(#FF0000, #FF0000);
+}
+
+#idFechar:pressed{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-margin: 0 0 0 0;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+/*Botão excluir da Tela de Gerenciamento*/
+#idExcluir{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: #FFC107;
+    -fx-text-fill:white;
+}
+
+#idExcluir:hover{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: linear-gradient(#FFA000, #FFA000);
+}
+
+#idExcluir:pressed{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-margin: 0 0 0 0;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+/*Botão atualizar da Tela de Edição*/
+#idAtualizar{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: #64DD17;
+    -fx-text-fill:white;
+}
+
+#idAtualizar:hover{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: linear-gradient(#76FF03, #76FF03);
+}
+
+#idAtualizar:pressed{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-margin: 0 0 0 0;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+/*Botão editar da Tela de Gerenciamento*/
+#idEditar{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: #42A5F5; 
+    -fx-text-fill:white;
+}
+
+#idEditar:hover{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: linear-gradient(#0283FF, #0283FF);
+}
+
+#idEditar:pressed{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-margin: 0 0 0 0;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+/*Botão Entrar da Tela de Autenticação*/
+#onClick{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: linear-gradient(#42A5F5, #42A5F5);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill:white;
+}
+
+#onClick:hover{
+    -fx-background-color: linear-gradient(#0283FF, #0283FF);
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+}
+
+#onClick:pressed{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-margin: 0 0 0 0;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+/*Botão enviar da Tela de Recuperação de Senha*/
+#idEnviar{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: linear-gradient(#64DD17, #64DD17);
+    -fx-text-fill:white;
+}
+
+#idEnviar:hover{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: linear-gradient(#76FF03, #76FF03);
+}
+
+#idEnviar:pressed{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-margin: 0 0 0 0;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+/*Labels da Tela de Recuperação de Senha*/
+#idMail, #idRecuperarSenha{
+    -fx-text-fill:white;
+}
+
+/*Tela de Recuperação de Senha*/
+#AnchorPaneMail{
+    -fx-background-image: url("email.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 800 600;
+    -fx-background-position: bottom, center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+}
+
+/*Botão Limpar das telas de Cadastro e Edição*/
+#idLimpar{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: #42A5F5;
+    -fx-text-fill:white;
+}
+
+#idLimpar:hover{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: linear-gradient(#0283FF, #0283FF);
+}
+
+#idLimpar:pressed{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-margin: 0 0 0 0;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+#idVisualizar{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: #607D8B; 
+    -fx-text-fill:white;
+}
+
+#idVisualizar:hover{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: linear-gradient(#455A64, #455A64);
+}
+
+#idVisualizar:pressed{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-margin: 0 0 0 0;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+#idVoltar{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: #F44336;
+    -fx-text-fill:white;
+}
+
+#idVoltar:hover{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: linear-gradient(#FF0000, #FF0000);
+}
+
+#idVoltar:pressed{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-margin: 0 0 0 0;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+#idRefresh{
+    -fx-background-image: url("refresh.png");
+    -fx-background-size: 30 30;
+    -fx-background-color: transparent;
+    -fx-background-position: center, center;
+    -fx-background-repeat: stretch;   
+}
+
+#idRefresh:pressed{
+    -fx-background-image: url("refresh.png");
+    -fx-background-size: 25 25;
+    -fx-background-color: transparent;
+    -fx-background-position: center, center;
+    -fx-background-repeat: stretch;   
+}

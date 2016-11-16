@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="idAnchorPaneGerenciar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="612.0" stylesheets="@../Controllers/Estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.sistemaacademico.Interface.Controllers.DisciplinaGerenciamento_Controller">
+   <children>
+      <GridPane fx:id="idGrid" layoutX="29.0" layoutY="51.0" prefHeight="30.0" prefWidth="1066.0" stylesheets="@../Controllers/Estilo.css">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="30.0" minHeight="6.0" prefHeight="30.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Line endX="440.0" startX="-100.0" stroke="#7d7dff" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Line>
+            <Label text="Gerenciamento de Disciplinas" textFill="#7d7dff" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+         </children>
+      </GridPane>
+      <Button fx:id="idFechar" layoutX="410.0" layoutY="350.0" mnemonicParsing="false" onAction="#fechar" prefHeight="30.0" prefWidth="96.0" stylesheets="@../Controllers/Estilo.css" text="Fechar" textFill="RED" />
+      <TableView fx:id="idTable" layoutX="35.0" layoutY="109.0" prefHeight="209.0" prefWidth="535.0" stylesheets="@../Controllers/Estilo.css">
+        <columns>
+            <TableColumn fx:id="nome" prefWidth="422.0" text="Nome" />
+            <TableColumn fx:id="periodo" prefWidth="108.0" text="Período" />
+        </columns>
+      </TableView>
+      <Button fx:id="idEditar" layoutX="160.0" layoutY="350.0" mnemonicParsing="false" onAction="#editar" prefHeight="30.0" prefWidth="96.0" stylesheets="@../Controllers/Estilo.css" text="Editar" textFill="#114fee" />
+      <Button fx:id="idCadastrar" layoutX="35.0" layoutY="350.0" mnemonicParsing="false" onAction="#cadastrar" prefHeight="30.0" prefWidth="96.0" stylesheets="@../Controllers/Estilo.css" text="Cadastrar" textFill="#10e147" />
+      <Button fx:id="idExcluir" layoutX="285.0" layoutY="350.0" mnemonicParsing="false" onAction="#excluir" prefHeight="30.0" prefWidth="96.0" stylesheets="@../Controllers/Estilo.css" text="Excluir" textFill="#ed4213" />
+      <Button fx:id="idRefresh" layoutX="525.0" layoutY="351.0" mnemonicParsing="false" onAction="#refreshTable" prefHeight="30.0" prefWidth="39.0" stylesheets="@../Controllers/Estilo.css" textFill="RED" />
+      <AnchorPane id="AnchorPane" fx:id="idAnchorPane" layoutX="-1.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="610.0" stylesheets="@../Controllers/Estilo.css">
+         <children>
+            <GridPane layoutX="26.0" layoutY="128.0" prefHeight="272.0" prefWidth="561.0">
+               <children>
+                  <Label text="Nome:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField fx:id="idNome" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="260.0" promptText="nome" GridPane.columnIndex="1" />
+                  <Label text="Período:" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Button fx:id="idCancelar" mnemonicParsing="false" onAction="#cancelar" prefHeight="30.0" prefWidth="96.0" stylesheets="@../Controllers/Estilo.css" text="Cancelar" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets bottom="4.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <ComboBox fx:id="idPeriodo" prefHeight="25.0" prefWidth="130.0" promptText="Selecione" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button fx:id="idAtualizar" mnemonicParsing="false" onAction="#atualizar" prefHeight="30.0" prefWidth="96.0" stylesheets="@../Controllers/Estilo.css" text="Atualizar" textFill="#10e147" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets bottom="3.0" left="10.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="idTeclado" mnemonicParsing="false" onAction="#abrirTeclado" prefHeight="30.0" prefWidth="80.0" stylesheets="@../Controllers/Estilo.css" text="Teclado" textFill="#1200ff" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets bottom="4.0" left="140.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="idLimpar" maxHeight="30.0" maxWidth="80.0" mnemonicParsing="false" onAction="#limpar" stylesheets="@../Controllers/Estilo.css" text="Limpar" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets bottom="4.0" left="235.0" />
+                     </GridPane.margin>
+                  </Button>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="138.0" minWidth="5.0" prefWidth="89.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="360.0" minWidth="10.0" prefWidth="351.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="72.0" minHeight="9.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="72.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="72.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="72.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="104.0" minHeight="10.0" prefHeight="88.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <GridPane layoutX="24.0" layoutY="40.0" prefHeight="30.0" prefWidth="722.0">
+               <children>
+                  <Line endX="440.0" startX="-100.0" stroke="#7d7dff" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Line>
+                  <Label text="Atualizar Registro de Disciplina" textFill="#7d7dff" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="Calibri" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="30.0" minHeight="6.0" prefHeight="30.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
